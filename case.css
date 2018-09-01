@@ -1,0 +1,121 @@
+#header{
+    position:fixed;
+    background-color:00c6ba;
+    height:50px;
+    width:100vw;
+    z-index: 15;
+    box-shadow: #808080;
+}
+#root
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top:10%;
+}
+/*CASE*/
+#case_details
+{   flex:2;
+    order:2;
+    display: flex;
+    flex-direction: column;
+
+}
+::-webkit-scrollbar
+{
+	width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 199, 189); 
+}
+li{
+    margin:5px;
+}
+#item
+{
+    text-align: center;
+}
+/*CHAT*/
+#chat
+{
+	flex: 0.8;
+    order: 3;
+    height: 88%;
+	background-color: #b0f3ff;
+    margin: 0 0 5px 5px;
+}/*
+STATS
+*/
+#stats
+{
+flex: 0.8;
+order: 1;
+border: 2px black solid;
+display: flex;
+flex-direction: column;
+height: 88%;
+background-color:white;
+overflow: scroll;
+margin: 0 0 5px 5px;
+text-align: center;
+}
+#stats_head
+{
+color:red;
+font-size:  20px;
+font-family: "GeForce";
+}
+
+#daily, #alltime
+{
+border-top: 1px #808080 solid;
+border-bottom: 1px #808080 solid;	
+}
+#alltopunbox,#topunbox{
+height: 250px;
+border-top: 1px #808080 solid;
+border-bottom: 1px #808080 solid;
+}
+#top_w,#top_aw
+{
+height: 200px;
+position: relative;
+top:-50px;
+}
+#tustats,#atustats
+{
+text-align: center;
+
+position: relative;
+top:-100px;
+font-family: "GeForce";
+}
+#dstats,#atstats
+{
+text-align: center;
+font-size:15px;
+font-family: "GeForce";
+}
+
+@media screen and (max-width:768px)
+{
+    #stats{
+        visibility: hidden;
+        flex: 0;
+    }
+    #chat{
+        visibility: hidden;
+        flex: 0;
+    }
+    #vgo_logo{
+        margin-left: auto;
+    }
+    #case_head
+    {
+        left: 10%;
+    }
+    #case_details
+    {
+        width: 96%;
+    }
+}

@@ -1,0 +1,381 @@
+body
+{
+	margin:0px;
+	background: url('assets/background.png') repeat;
+}
+#header{
+position:fixed;
+border-bottom: 2px #7100c8 solid;
+height:60px;
+width:100vw;
+z-index: 15;
+box-shadow: 0 0 10px #b67de0;
+}
+
+::-webkit-scrollbar
+{
+	width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 199, 189); 
+}
+
+#root
+{
+	display: flex;
+	flex-direction: row;
+	width:99%;
+	position: relative;
+	top:80px;
+	justify-content: space-evenly;
+}
+
+#case_area
+{
+flex: 2.5;
+order: 1;
+width: 900px;
+height: 500px;
+margin: 0 0 5px 5px;
+justify-content: space-around;
+display: flex;
+flex-wrap: wrap;
+overflow-y: scroll;
+}
+
+
+
+#footer
+{
+background-color:00c6ba;
+position: fixed;
+bottom: 0;
+margin-top: 10px;
+height: 50px;
+width: 100%;
+}
+
+#login{
+background-color:white;
+position: absolute;
+left:80%;
+transform:translate(-50%,-50%);
+top:10%;
+width:10%;
+height: 5vh;
+left:90vw;
+padding:0.5%;
+text-align:center;
+vertical-align:middle;
+background-color: white;
+font-family: "GeForce";
+border: 1px black solid;
+}
+
+#vgo_logo
+{
+height:90%;
+width: auto;
+position: relative;
+top:5%;
+left:2%;
+}
+
+
+#buybtn
+{
+text-align:center;
+font-family: "GeForce";
+background-color: rgba(0,0,0,0);
+border:none;
+border-top: 2px #7100c8 solid;
+display: block;
+height: 20px;
+width:100%;
+font-size:15px;
+color: #decaec;
+height: 20%;
+cursor: pointer;
+}
+
+#login
+{
+	
+	cursor: pointer;
+	text-align:center;
+	position: relative;
+	top: 4%;
+	left:80%;
+	color: #b67de0;
+	background-color: rgba(0,0,0,0);
+	width: 100px;
+	height: 40px;
+	font-size: 20px;
+	border: 2px #b67de0 solid;
+}
+#steam
+{
+	height: 20px;
+	width: 20px;
+	position: relative;
+	top: 2px;
+	left:-5px;
+}
+#key
+{
+	height: 20px;
+	width: 20px;
+	position: relative;
+	top: 5px;
+	left:-10px;
+}
+
+.casebox {
+border: 2px #7100c8 solid; 
+background-color: rgba(0,0,0,0.3);
+height: 250px;
+width: 150px;
+display: flex;
+flex-direction: column;
+margin: 10px;
+box-shadow: 0 0 10px #b67de0;
+}
+
+.case_img {
+	position: relative;
+	top:-5%;
+    margin-left: auto;
+	margin-right: auto;
+	flex: 3;
+	object-fit: contain;
+	max-width: 120px;
+	cursor: pointer;
+}
+
+#case_name
+{
+font-size: 15px;
+width: fit-content;
+
+color: #decaec;
+font-size-adjust: inherit;
+font-family: "GeForce";
+margin-left: auto;
+margin-right: auto;
+cursor: default;
+}
+
+#tabs
+{
+	flex:1;
+	order:2;
+	height:80%;
+}
+
+#tabs #buttonpanel
+{
+	text-align: center;
+	width: inherit;
+	justify-content: space-around;
+	background: rgba(164, 111, 185, 0.3);
+}
+#tabs #buttonpanel button
+{
+	width: 32%;
+	background: rgba(0,0,0,0.5);
+	color:#b67de0;
+	border:none;
+	font-family: "Geforce";
+	font-size: 15px;
+	height: 50px;
+}
+#tabs #buttonpanel button:hover
+{	transition: 0.2s;
+	background: rgba(134, 51, 160, 0.5);
+}
+
+#tabs #tabpanel
+{
+	width:100%;
+	height: 95%;
+	display: none;
+}
+#stats
+{
+display: block;
+visibility: hidden;
+flex-direction: column;
+height: 100%;
+overflow: scroll;
+margin: 0 0 5px 5px;
+text-align: center;
+color: #b67de0;
+
+border: 2px #7100c8 solid; 
+box-shadow: 0 0 10px #b67de0;
+background-color:rgba(0,0,0,0.4);
+}
+#stats_head
+{
+color:red;
+font-size:  20px;
+font-family: "GeForce";
+}
+
+#daily, #alltime
+{
+
+	border-top: 1px #7100c8 solid;
+	border-bottom: 1px #7100c8 solid;
+}
+#alltopunbox,#topunbox{
+height: 250px;
+border-top: 1px #7100c8 solid;
+border-bottom: 1px #7100c8 solid;
+}
+#top_w,#top_aw
+{
+height: 200px;
+position: relative;
+top:-50px;
+}
+#tustats,#atustats
+{
+text-align: center;
+
+position: relative;
+top:-100px;
+font-family: "GeForce";
+}
+#dstats,#atstats
+{
+text-align: center;
+font-size:15px;
+font-family: "GeForce";
+}
+
+#chat
+{	
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	border: 2px #7100c8 solid; 
+	box-shadow: 0 0 10px #b67de0;
+	background-color:rgba(0,0,0,0.4);
+}
+#messages
+{
+	height: 90%;
+	overflow-y:scroll;
+}
+#chatbottom form input[type="submit"]{
+	margin-top: 2%;
+	padding:6px;
+	background: white;
+	border:1px solid #ddd;
+	cursor: pointer;
+}
+#chatbottom form input[type="text"]{
+	width:85%;
+	margin-left: 5px;
+	padding: 3px;
+	padding-left: 10px;
+	border:1px solid #ddd;
+	border-radius: 5px;
+	height: 30px; 
+}
+#history
+{	
+	width:100%;
+	visibility: hidden;
+	height: 100%;
+	background-color: #6cf8ab;
+}
+
+
+.case_img,#top_w,#top_aw{
+	animation: levitate 2s alternate-reverse infinite linear;
+}
+
+.casebox:hover{
+	animation: boxhovering 0.1s forwards;
+	background-color: rgba(154, 0, 185, 0.3);
+}
+#buybtn:hover
+{
+	transition: 0.5s;
+	animation: buttonhovering 0.2s forwards;
+	background-color: rgba(201, 65, 255, 0.2);
+}
+.case_img:hover
+{
+	animation: casehovering 0.3s;
+}
+/*Animations*/
+@keyframes levitate
+{
+	from{ 
+		position: relative;
+		transform:translateY(-5px); }
+	to{
+		position: relative;
+		transform:translateY(+5px);
+	}
+}
+
+@keyframes casehovering
+{
+	
+	0%{
+		transform: rotateZ(0deg);
+	}
+	20%
+	{	
+		transform: rotateZ(-5deg);
+	}
+	80%
+	{
+		transform: rotateZ(5deg);
+	}
+	100%
+	{
+		transform: rotateZ(0deg);
+	}
+}
+
+@keyframes boxhovering
+{
+	from{
+		height: 254px;
+		width: 154px;
+	}
+	to{
+		height: 264px;
+		width: 164px;
+	}
+}
+/*MediaQueries*/
+@media only screen and (max-width: 600px) {
+    #root{
+		flex-direction: column;
+		height: 85%;
+		overflow: scroll;
+		text-align: center;
+		height: fit-content;	
+	}
+	#case_area{
+		order:1;
+		height: 40%;
+		width: 96%;
+		margin-left: 10px;
+		margin-right: 10px;
+		justify-content: space-around;
+	}
+	#tabs{
+		flex:1;
+	}
+	#chatbottom
+	{	position: absolute;
+		top: 95%;
+	}
+}

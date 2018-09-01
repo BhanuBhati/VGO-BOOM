@@ -1,0 +1,113 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+<div id="header">
+<img id="vgo_logo" src="assets/logo.png"/>
+<button id="login" type="#"><img id="steam" src="assets/logo_steam.png" />Login</button>
+</div>
+<div id="root">
+<div id="case_area">
+<div id="case1" class="casebox">
+    <h2 id="case_name">Weapon Case 1</h2>
+    <img  onclick="location.href='case1.html'" class="case_img"  src="assets/weapon-case-1-300.png">
+    <button id="buybtn" type="#"><img id="key" src="assets/keyp.png" />Buy Case</button>
+</div>
+
+
+<div id="case2" class="casebox">
+    <h2 id="case_name">Weapon Case 2</h2>
+    <img class="case_img" src="assets/weapon-case-2-300.png">
+    <button id="buybtn" type="#"><img id="key" src="assets/keyp.png" />Buy Case</button>
+</div>
+
+
+<div id="case3" class="casebox">
+    <h2 id="case_name">Weapon Case 3</h2>
+    <img class="case_img" src="assets/weapon-case-3-300.png">
+    <button id="buybtn" type="#"><img id="key" src="assets/keyp.png" />Buy Case</button>
+</div>
+
+
+<div id="case4" class="casebox">
+    <h2 id="case_name">Weapon Case 4</h2>
+    <img class="case_img" src="assets/weapon-case-4-300.png">
+    <button id="buybtn" type="#"><img id="key" src="assets/keyp.png" />Buy Case</button>
+</div>
+
+</div>
+
+
+<!--  TABS  -->
+
+
+<div id="tabs" onload="loaded">
+<div id="buttonpanel">
+<button type="#" onclick="switchtabs(this.id)" id="button_stats">Stats</button>
+<button type="#" onclick="switchtabs(this.id)" id="button_chat">Chat</button>
+<button type="#" onclick="switchtabs(this.id)" id="button_history">History</button>
+</div>
+<div id="tabpanel">
+<div id="stats">
+<div id="daily">
+<h3 id="stats_head">Daily Stats<h3>
+<h4 id="dstats">Cases opened
+708
+<br>
+Skins rewarded
+$1,634.36
+</h4>
+</div>
+<div id="alltime">
+<h3 id="stats_head">All-Time Stats<h3>
+<h4 id="atstats">Cases opened
+674.78k
+<br>
+Skins rewarded
+$1,565,942.23
+</h4>
+</div>
+<div id="alltopunbox">
+<h3 id="stats_head">Top Unbox Today</h3>
+<img id="top_aw" src="assets/karambit-tuxedo-battle-scarred-300.png"/>
+
+<h4 id="atustats">Karambit | Tuxedo (Battle-Scarred)<br>
+valued at
+$811.21<br>
+opened by
+Raxor</h4>
+</div>
+<div id="topunbox">
+<h3 id="stats_head">Top Unbox Today</h3>
+<img id="top_w" src="assets/m9-bayonet-stellar-battle-scarred-300.png"/>
+
+<h4 id="tustats">
+M9 Bayonet | Stellar (Battle-Scarred)<br>
+valued at
+$519.57<br>
+opened by
+okinho89</h4>
+</div>
+</div>
+
+<div id="chat">
+    <div id="messages"></div>
+    <div id="chatbottom">
+        <form action="#" onSubmit="return false;" id="chatform">
+            <input type="text" name="message" id="message" value="" placeholder="Say Something!"/>
+            <input type="submit" name="submit" value="Post"/>
+        </form>
+    </div>
+</div>
+<div id="history">
+</div>
+</div>
+</div>
+<script src="script/tabs.js"></script>
+</body>
+
+</html
