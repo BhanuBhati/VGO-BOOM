@@ -13,7 +13,7 @@ function switchtabs(n)
         case 'button_stats':
             currenttab=document.getElementById('stats');
             break;
-    }
+    }goihfihSSS
     
     currenttab.style.visibility="visible";
 }
