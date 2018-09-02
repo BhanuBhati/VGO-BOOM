@@ -1,8 +1,9 @@
 currenttab=document.getElementById('stats');
-currenttab.style.visibility="visible";
+document.getElementById('tabpanel').style.display="block";
+currenttab.style.display="block";
 function switchtabs(n)
 {
-    currenttab.style.visibility="hidden";
+    currenttab.style.display="none";
     switch(n){
         case 'button_chat':
             currenttab=document.getElementById('chat');
@@ -13,7 +14,7 @@ function switchtabs(n)
         case 'button_stats':
             currenttab=document.getElementById('stats');
             break;
-    }goihfihSSS
+    }
     
-    currenttab.style.visibility="visible";
+    currenttab.style.display="block";
 }

@@ -4,7 +4,7 @@ body
 	background: url('assets/background.png') repeat;
 }
 #header{
-position:fixed;
+display: inline-block;
 border-bottom: 2px #7100c8 solid;
 height:60px;
 width:100vw;
@@ -26,7 +26,6 @@ box-shadow: 0 0 10px #b67de0;
 	flex-direction: row;
 	width:99%;
 	position: relative;
-	top:80px;
 	justify-content: space-evenly;
 }
 
@@ -55,30 +54,12 @@ height: 50px;
 width: 100%;
 }
 
-#login{
-background-color:white;
-position: absolute;
-left:80%;
-transform:translate(-50%,-50%);
-top:10%;
-width:10%;
-height: 5vh;
-left:90vw;
-padding:0.5%;
-text-align:center;
-vertical-align:middle;
-background-color: white;
-font-family: "GeForce";
-border: 1px black solid;
-}
-
 #vgo_logo
 {
-height:90%;
-width: auto;
-position: relative;
-top:5%;
-left:2%;
+	width: 150px;
+	float: left;
+	margin-left: 2%;
+	margin-top:5px;
 }
 
 
@@ -98,22 +79,22 @@ height: 20%;
 cursor: pointer;
 }
 
-#login
+.login
 {
-	
+	float: right;
+	margin-right: 5%;
+	margin-top:10px;
+	font-family: "GeForce";
 	cursor: pointer;
 	text-align:center;
-	position: relative;
-	top: 4%;
-	left:80%;
 	color: #b67de0;
 	background-color: rgba(0,0,0,0);
-	width: 100px;
+	width: fit-content;
 	height: 40px;
 	font-size: 20px;
 	border: 2px #b67de0 solid;
 }
-#steam
+.steam
 {
 	height: 20px;
 	width: 20px;
@@ -121,7 +102,7 @@ cursor: pointer;
 	top: 2px;
 	left:-5px;
 }
-#key
+.key
 {
 	height: 20px;
 	width: 20px;
@@ -203,7 +184,6 @@ cursor: default;
 #stats
 {
 display: block;
-visibility: hidden;
 flex-direction: column;
 height: 100%;
 overflow: scroll;
@@ -256,9 +236,9 @@ font-family: "GeForce";
 
 #chat
 {	
+	display: none;
 	width: 100%;
 	height: 100%;
-	visibility: hidden;
 	border: 2px #7100c8 solid; 
 	box-shadow: 0 0 10px #b67de0;
 	background-color:rgba(0,0,0,0.4);
@@ -286,8 +266,8 @@ font-family: "GeForce";
 }
 #history
 {	
+	display: none;
 	width:100%;
-	visibility: hidden;
 	height: 100%;
 	background-color: #6cf8ab;
 }
@@ -356,26 +336,31 @@ font-family: "GeForce";
 }
 /*MediaQueries*/
 @media only screen and (max-width: 600px) {
-    #root{
-		flex-direction: column;
-		height: 85%;
-		overflow: scroll;
+	#header{
 		text-align: center;
-		height: fit-content;	
+	}
+	#vgo_logo
+	{
+		float: none;
+		margin:auto;
+	}
+	.login
+	{
+		display: none;
+	}
+	#root{
+		display: block;
+		height: 85%;
+		text-align: center;	
 	}
 	#case_area{
-		order:1;
-		height: 40%;
+		height: 50%;
 		width: 96%;
 		margin-left: 10px;
 		margin-right: 10px;
 		justify-content: space-around;
 	}
 	#tabs{
-		flex:1;
-	}
-	#chatbottom
-	{	position: absolute;
-		top: 95%;
+		height: 50%;
 	}
 }
