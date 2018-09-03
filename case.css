@@ -1,25 +1,70 @@
-#header{
-    position:fixed;
-    background-color:00c6ba;
-    height:50px;
-    width:100vw;
-    z-index: 15;
-    box-shadow: #808080;
+body
+{
+margin:0px;
+	background: url('assets/background.png');
 }
+#header{
+display: inline-block;
+border-bottom: 2px #7100c8 solid;
+height:60px;
+width:100vw;
+z-index: 15;
+box-shadow: 0 0 10px #b67de0;
+}
+#vgo_logo
+{
+	width: 150px;
+	float: left;
+	margin-left: 2%;
+	margin-top:5px;
+}
+
+
 #root
 {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    top:10%;
+	display: flex;
+	flex-direction: row;
+	width:99%;
+	justify-content: space-evenly;
 }
 /*CASE*/
-#case_details
-{   flex:2;
-    order:2;
-    display: flex;
-    flex-direction: column;
+.case_area
+{
+flex: 2.5;
+order: 1;
+height: 500px;
+margin: 0 0 5px 5px;
+justify-content: space-around;
+overflow-y: scroll;
+text-align:center;
+}
+.case_img {
+	width:200px;
+	cursor: pointer;
+}
+.case_det
+{
+	color: white;
+	font-family:"Geforce";
+	float:center;
+	display:inline-block;
+	position:absolute;
+top:10%;
+}
+#case_name
+{
+}
+#case_stats
+{
+	font-size:15px;
+	color:#b67de0;
 
+}
+#case_head
+{
+	display:inline-block;
+	box-sizing:border-box;
+	width: 50%;
 }
 ::-webkit-scrollbar
 {
@@ -35,29 +80,55 @@ li{
 {
     text-align: center;
 }
-/*CHAT*/
-#chat
+
+#tabs
 {
-	flex: 0.8;
-    order: 3;
-    height: 88%;
-	background-color: #b0f3ff;
-    margin: 0 0 5px 5px;
-}/*
-STATS
-*/
+	flex:1;
+	order:2;
+	height:80%;
+}
+
+#tabs #buttonpanel
+{
+	text-align: center;
+	width: inherit;
+	justify-content: space-around;
+	background: rgba(164, 111, 185, 0.3);
+}
+#tabs #buttonpanel button
+{
+	width: 32%;
+	background: rgba(0,0,0,0.5);
+	color:#b67de0;
+	border:none;
+	font-family: "Geforce";
+	font-size: 15px;
+	height: 50px;
+}
+#tabs #buttonpanel button:hover
+{	transition: 0.2s;
+	background: rgba(134, 51, 160, 0.5);
+}
+
+#tabs #tabpanel
+{
+	width:100%;
+	height: 95%;
+	display: none;
+}
 #stats
 {
-flex: 0.8;
-order: 1;
-border: 2px black solid;
-display: flex;
+display: block;
 flex-direction: column;
-height: 88%;
-background-color:white;
+height: 100%;
 overflow: scroll;
 margin: 0 0 5px 5px;
 text-align: center;
+color: #b67de0;
+
+border: 2px #7100c8 solid; 
+box-shadow: 0 0 10px #b67de0;
+background-color:rgba(0,0,0,0.4);
 }
 #stats_head
 {
@@ -68,13 +139,14 @@ font-family: "GeForce";
 
 #daily, #alltime
 {
-border-top: 1px #808080 solid;
-border-bottom: 1px #808080 solid;	
+
+	border-top: 1px #7100c8 solid;
+	border-bottom: 1px #7100c8 solid;
 }
 #alltopunbox,#topunbox{
 height: 250px;
-border-top: 1px #808080 solid;
-border-bottom: 1px #808080 solid;
+border-top: 1px #7100c8 solid;
+border-bottom: 1px #7100c8 solid;
 }
 #top_w,#top_aw
 {
@@ -96,6 +168,45 @@ text-align: center;
 font-size:15px;
 font-family: "GeForce";
 }
+
+#chat
+{	
+	display: none;
+	width: 100%;
+	height: 100%;
+	border: 2px #7100c8 solid; 
+	box-shadow: 0 0 10px #b67de0;
+	background-color:rgba(0,0,0,0.4);
+}
+#messages
+{
+	height: 90%;
+	overflow-y:scroll;
+}
+#chatbottom form input[type="submit"]{
+	margin-top: 2%;
+	padding:6px;
+	background: white;
+	border:1px solid #ddd;
+	cursor: pointer;
+}
+#chatbottom form input[type="text"]{
+	width:85%;
+	margin-left: 5px;
+	padding: 3px;
+	padding-left: 10px;
+	border:1px solid #ddd;
+	border-radius: 5px;
+	height: 30px; 
+}
+#history
+{	
+	display: none;
+	width:100%;
+	height: 100%;
+	background-color: #6cf8ab;
+}
+
 
 @media screen and (max-width:768px)
 {
