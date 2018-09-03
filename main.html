@@ -2,13 +2,15 @@
 <head>
 <link rel="stylesheet" type="text/css" href="main.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="script/request.js"></script>
 </head>
 
-<body>
+<body onload="process()">
 <div id="header">
 <img id="vgo_logo" src="assets/logo.png"/>
-<button class="login" type="#"><img class="steam" src="assets/logo_steam.png" />Signin with Steam</button>
+<button class="login" type="#"><img class="steam" onclick="signin()" src="assets/logo_steam.png" />Signin with Steam</button>
 </div>
 <div id="root">
 <div id="case_area">
