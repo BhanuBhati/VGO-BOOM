@@ -35,37 +35,28 @@ order: 1;
 height: 500px;
 margin: 0 0 5px 5px;
 justify-content: space-around;
-overflow-y: scroll;
 text-align:center;
+display: inline-block;
 }
-.case_img {
-	width:200px;
-	cursor: pointer;
-}
-.case_det
-{
-	color: white;
-	font-family:"Geforce";
-	float:center;
-	display:inline-block;
-	position:absolute;
-top:10%;
-}
-#case_name
-{
-}
-#case_stats
-{
-	font-size:15px;
-	color:#b67de0;
 
-}
-#case_head
+.case_img
 {
-	display:inline-block;
-	box-sizing:border-box;
-	width: 50%;
+	height:200px;
+	width:200px;
 }
+.case_name
+{
+font-family:"Geforce";
+font-size:25px;
+color: white;
+}
+.case_fet
+{
+font-family:"Geforce";
+font-size:15px;
+color:#b67de0;
+}
+
 ::-webkit-scrollbar
 {
 	width: 5px;
@@ -208,25 +199,32 @@ font-family: "GeForce";
 }
 
 
-@media screen and (max-width:768px)
-{
-    #stats{
-        visibility: hidden;
-        flex: 0;
-    }
-    #chat{
-        visibility: hidden;
-        flex: 0;
-    }
-    #vgo_logo{
-        margin-left: auto;
-    }
-    #case_head
-    {
-        left: 10%;
-    }
-    #case_details
-    {
-        width: 96%;
-    }
+@media only screen and (max-width: 600px) {
+	#header{
+		text-align: center;
+	}
+	#vgo_logo
+	{
+		float: none;
+		margin:auto;
+	}
+	.login
+	{
+		display: none;
+	}
+	#root{
+		display: block;
+		height: 85%;
+		text-align: center;	
+	}
+	.case_area{
+		height: 45%;
+		width: 96%;
+		margin-left: 10px;
+		margin-right: 10px;
+		justify-content: space-around;
+	}
+	#tabs{
+		height: 45%;
+	}
 }

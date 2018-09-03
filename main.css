@@ -41,8 +41,23 @@ display: flex;
 flex-wrap: wrap;
 overflow-y: scroll;
 }
-
-
+.case_img
+{
+	height:200px;
+	width:200px;
+}
+.case_name
+{
+font-family:"Geforce";
+font-size:25px;
+color: white;
+}
+.case_fet
+{
+font-family:"Geforce";
+font-size:15px;
+color:#b67de0;
+}
 #vgo_logo
 {
 	width: 150px;
